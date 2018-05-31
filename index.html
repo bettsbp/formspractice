@@ -20,7 +20,7 @@
         <li role="presentation"><a href="#">Address Book</a></li>
       </ul>
       <div class="well">
-        <form id="name">
+        <form id="survey">
           <div class="form-group">
             <label for="name">Your name</label>
             <input id="name" class="form-control" type="text">
@@ -43,15 +43,53 @@
           </div>
           <div>
             <h5>Favorite drink</h5>
-            <select class="form-control" id="beverage">
+            <select class="form-control" id="favDrink">
               <option>Coffee</option>
               <option>Tea</option>
               <option>Kombucha</option>
               <option>Water</option>
             </select>
           </div>
+          <h5>Favorite ice-cream flavor</h5>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favCream" value="Chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favCream" value="Vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="favCream" value="Cookies and Cream">
+              Cookies and Cream
+            </label>
+          </div>
           <button type="submit" class="btn">Submit!</button>
         </form>
+      </div>
+      <div class="jumbotron">
+        <h3>Survey Results:</h3>
+      </div>
+      <div class="well">
+        <div id="results">
+          <h1>Results</h1>
+          <ul>
+            <li><span class="name"></span></li>
+            <li><span class="favFood"></span></li>
+            <li><span class="favCol"></span></li>
+            <li><span class="favPlace"></span></li>
+            <li><span class="favMusic"></span></li>
+            <li><span class="name"></span></li>
+            <li><span class="favDrink"></span></li>
+            <li><span class="favCream"></span></li>
+
+          </ul>
+        </div>
       </div>
     </div>
   </body>
