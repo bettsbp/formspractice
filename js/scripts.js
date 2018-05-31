@@ -22,4 +22,23 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+
+  $("#market").submit(function(event) {
+    var inputNameFirst = $("input#namefirst").val();
+    var inputNameLast = $("input#namelast").val();
+    var inputAddress1 = $("input#address1").val();
+    var inputAddress2 = $("input#address2").val();
+
+    $(".namefirst").text(inputNameFirst);
+    $(".namelast").text(inputNameLast);
+    $(".address1").text(inputAddress1);
+    $(".address2").text(inputAddress2);
+
+    $("#results").show();
+
+    event.preventDefault();
+  });
+
+
 });
